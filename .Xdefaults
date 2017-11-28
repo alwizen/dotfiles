@@ -1,0 +1,134 @@
+! xscreensaver ---------------------------------------------------------------
+
+!font settings
+xscreensaver.Dialog.headingFont:        -*-dina-bold-r-*-*-10-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-dina-medium-r-*-*-10-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-dina-medium-r-*-*-10-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-dina-medium-r-*-*-10-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-dina-bold-r-*-*-10-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-dina-medium-r-*-*-10-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -*-dina-bold-r-*-*-10-*-*-*-*-*-*-*
+!general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground:         #EDEDED
+xscreensaver.Dialog.background:         #202020
+xscreensaver.Dialog.topShadowColor:     #202024
+xscreensaver.Dialog.bottomShadowColor:  #202024
+xscreensaver.Dialog.Button.foreground:  #EDEDFF
+xscreensaver.Dialog.Button.background:  #444
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #EDEDFF
+xscreensaver.Dialog.text.background:    #444
+xscreensaver.Dialog.internalBorderWidth:24
+xscreensaver.Dialog.borderWidth:        0
+xscreensaver.Dialog.shadowThickness:    2
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:  #A9B7C4
+xscreensaver.passwd.thermometer.background:  #202020
+xscreensaver.passwd.thermometer.width:       8
+!datestamp format--see the strftime(3) manual page for details
+xscreensaver.dateFormat:    %I:%M%P %a %b %d, %Y
+
+
+
+!- Font Render
+Xft.dpi:96
+Xft.antialiasing:false
+Xft.rgba:rgb
+Xft.hinting:true
+Xft.lcdfilter:lcddefault
+
+
+
+URxvt.borderColor:         #262729
+URxvt.borderless:          true
+URxvt.internalBorder: 3
+
+URxvt.colorBD:              #ffffff
+URxvt.colorIT:              #a761c2
+URxvt.colorUL:              #6d9cbe
+URxvt.underlineColor:       #333333
+URxvt.highlightColor:       #ebac54
+URxvt.highlightTextColor:   #151515
+
+URxvt.scrollstyle:plain
+URxvt.scrollBar:false
+URxvt.scrollTtyOutput:false
+URxvt.scrollWithBuffer:true
+URxvt.scrollTtyKeypress:true
+
+URxvt.cursorColor:          #EFFDFF
+URxvt.cursorColor2:         #ebac54
+URxvt.cursorBlink:          true
+URxvt.cursorUnderline:      false
+URxvt.letterSpace: 1
+URxvt.depth:24
+
+
+!- Copy/paste
+URxvt.iso14755: False
+URxvt.keysym.Shift-Alt-C: perl:clipboard:copy
+URxvt.keysym.Shift-Alt-V: perl:clipboard:paste
+
+URxvt.underlineURLs:true
+! Fonts
+URxvt.allow_bold:           false
+/* URxvt.font:                 -*-terminus-medium-r-bold-*-9-120-72-72-c-60-iso8859-1 */
+/* urxvt*font: xft:Terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12 */
+URxvt*font: xft:Menlo\ for\ Powerline:pixelsize=11
+URxvt*boldFont: xft:Menlo\ for\ Powerline:pixelsize=14 
+
+/* URxvt*font: xft:Inconsolata\ for\ Powerline:pixelsize=12 */
+/* URxvt*boldFont: xft:Inconsolata\ for\ Powerline:pixelsize=14 */
+
+! Fix font space
+URxvt*letterSpace: -1
+URxvt.transparent:false
+URxvt.shading:30
+URxvt.geometry:75x24
+
+!-Urgent Terminal for Notification
+URxvt*urgentOnBell: true
+
+    URxvt*visualBell:   false
+
+!- Color Scheme
+! special
+*.foreground:   #cbd5cf
+*.background:   #262729
+*.cursorColor:  #cbd5cf
+
+! black
+*.color0:       #282b32
+*.color8:       #373b41
+
+! red
+*.color1:       #822b2b
+*.color9:       #cc6666
+
+! green
+*.color2:       #8c9440
+*.color10:      #b5bd68
+
+! yellow
+*.color3:       #bc9a83
+*.color11:      #b14d4d
+
+! blue
+*.color4:       #5f819d
+*.color12:      #81a2be
+
+! magenta
+*.color5:       #85678f
+*.color13:      #b294bb
+
+! cyan
+*.color6:       #5e8d87
+*.color14:      #8abeb7
+
+! white
+*.color7:       #707880
+*.color15:      #c5c8c6
+
+!
+! Bold, Italic, Underline
+*.colorBD:     #BD8230
